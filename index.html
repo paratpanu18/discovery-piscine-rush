@@ -1,13 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rush Project</title>
+    <title>😰 Rush Project 😰</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.animation.css">
+
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
 </head>
-<body>
-    
+<body class="d-flex flex-column h-100">
+    <div class="audio-control" id="audioControl">
+        <i class="fas fa-volume-up"></i>
+    </div>    
+    <audio src="/assets/furina_bgm.mp3" autoplay>
+        Your browser does not support the audio element.
+    </audio>
+    <div class="w-100">
+        <!-- Top Parallax Section -->
+        <div class="parallax" id="parallax-top">
+            <video autoplay loop muted class="background-video">
+                <source src="../assets/furina-rain.1920x1080.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay">
+                <h1 class="fw-bold text-light text-center display-3">🔥 Discovery Piscine - Rush Project 🔥</h1>
+                <p class="text-light text-center lead mt-3">
+                    This project is a part of 42Bangkok <b>"Discovery Piscine"</b> Rush Project <br>
+                    KMITL Hyflex - 90642111 Fun With Coding <br>
+                </p>
+                <div class="button-group">
+                    <a href="#contributors" class="btn btn-light mt-4">Contributors</a>
+                    <a href="https://github.com/paratpanu18/discovery-piscine-rush" target="_blank" class="btn btn-light mt-4">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
+                
+            <div class="scroll-down">
+                <span></span>
+            </div>
+            </div>
+        </div>
+
+        <!-- Profile Sections -->
+        <div class="container my-5" id="contributors">
+            <h2 class="text-center fw-bold mb-4 section-title">🚀 Contributors 🚀</h2>
+            <p class="text-center text-muted mb-5">These two dedicated Computer Engineering students poured their time and effort into this project, sacrificing their own coursework, sleep, and sanity—fully immersing themselves in the challenge, with barely a moment to spare for their major’s demands.</p>
+
+            <div class="row align-items-center info-block" id="oak-block">
+                <div class="col-md-4 profile-img text-center">
+                    <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/01/genshin-impact-hu-tao-new-skin.jpg" alt="Oak" class="img-fluid">
+                </div>
+                <div class="col-md-8 profile-info">
+                    <h2>Paratpanu Pechsaman (ppechsam) - <span class="canonical">OkuSan</span></h2>
+                    <p class="text-muted">
+                        Passionate software developer and gaming enthusiast. Specializing in ASP.NET, 
+                        web development, and creative UI/UX design. Loves Genshin Impact and innovative tech.
+                    </p>
+                    <a href="another-page.html" class="btn btn-primary mt-2">View More</a>
+                </div>
+            </div>
+
+            <div class="row align-items-center info-block flex-md-row-reverse mt-5" id="yo-block">
+                <div class="col-md-4 profile-img text-center">
+                    <img src="https://beebom.com/wp-content/uploads/2024/02/fireflys-illness-honkai-star-rail.jpg?w=1024" alt="PrompipatJa" class="img-fluid">
+                </div>
+                <div class="col-md-8 profile-info">
+                    <h2>Prompipat Thongtub (pthongtu) - <span class="canonical">PrompipatJa</span></h2>
+                    <p class="text-muted">
+                        Passionate software developer and gaming enthusiast. Specializing in ASP.NET, 
+                        web development, and creative UI/UX design. Loves Genshin Impact and innovative tech.
+                    </p>
+                    <a href="another-page.html" class="btn btn-primary mt-2">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Parallax Section -->
+        <div class="parallax" id="parallax-bottom">
+            <div class="overlay">
+            </div>
+        
+            <!-- Acrylic-style Contact Form -->
+            <div class="contact-form-container">
+                <div class="contact-form">
+                    <h3 class="text-light"><b>Contact Us</b></h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="receiver" class="form-label text-light">Select Receiver</label>
+                            <div class="dropdown">
+                                <div class="selected-option">
+                                    <span>Receiver</span>
+                                </div>
+                                <div class="dropdown-options">
+                                    <div class="dropdown-option" data-value="contact@okusan.cc">
+                                        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/01/genshin-impact-hu-tao-new-skin.jpg" alt="Oak" class="profile-img-option"> 
+                                        <span>Paratpanu Pechsaman (ppechsam)</span>
+                                    </div>
+                                    <div class="dropdown-option" data-value="prompipat@pthontu.com">
+                                        <img src="https://beebom.com/wp-content/uploads/2024/02/fireflys-illness-honkai-star-rail.jpg?w=1024" alt="PrompipatJa" class="profile-img-option"> 
+                                        <span>Prompipat Thongtub (pthontu)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label text-light">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-light">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label text-light">Message</label>
+                            <textarea id="message" class="form-control" rows="6" placeholder="Write your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-light" onclick="handleContactButton(event)">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
 </body>
 </html>
