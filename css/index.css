@@ -363,7 +363,7 @@ textarea#message {
     }
 
     .button-group .btn {
-        width: 80%;
+        width: fit-content;
         text-align: center;
     }
 
