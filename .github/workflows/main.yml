@@ -1,0 +1,23 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  checkout_and_update:
+    runs-on: self-hosted
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Remove old content from the specific folder
+      run: |
+        rm -rf ${{ secrets.TARGET_PATH }}*
+
+    - name: Copy the content to the specific folder
+      run: |
+        cp -r . ${{ secrets.TARGET_PATH }}
