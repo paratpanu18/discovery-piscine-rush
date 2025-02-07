@@ -375,4 +375,8 @@ textarea#message {
         margin-left: 10%;
         margin-right: 10%;
     }
+
+    .contact-form-container {
+        width: 95%;
+    }
 }
