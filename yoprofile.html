@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Prompipat Thongtub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar text-white">
+      <div class="profile-picture-div">
+        <a href="index.html">
+          <img
+            class="profile-img"
+            src="assets/yo_img.jpg"
+            alt="Profile"
+          />
+        </a>
+        <h4 class="name">Prompipat Thongtub</h4>
+        <h4 class="intra">@pthongtu</h4>
+      </div>
+      <div class="navigation">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link fs-4 text-white active nav-e" href="./index.html"
+              ><i class="fa-solid fa-arrow-left"></i> Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4 text-white active nav-e" href="#about"
+              >About Me</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4 text-white nav-e" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4 text-white nav-e" href="#contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <!-- Home Section -->
+      <div id="home">
+        <div class="overlay">
+          <h1>Prompipat Thongtub (Yo)</h1>
+          <h2>@pthongtu</h2>
+          <p>Welcome to my portfolio! Scroll down to learn more about me.</p>
+        </div>
+      </div>
+
+      <!-- About Me Section -->
+      <div id="about" class="about-section bg-light text-dark">
+        <div class="container">
+          <h1 class="section-title">About Me</h1>
+          <div class="divider"></div>
+          <div class="about-me-wrapper">
+            <div class="about-me-img">
+              <img
+                src="assets/yo_img.jpg"
+                alt=""
+              />
+            </div>
+            <div class="about-me-text">
+              <p class="fs-4">
+                Hi! I'm <span class="hilight-text">Prompipat Thongtub</span>, a
+                Computer Engineering student at KMITL. I'm a newbie web
+                developer passionate about creating user-friendly and visually
+                appealing interfaces.
+              </p>
+              <p class="fs-4">
+                I have experience with HTML, CSS, JavaScript, and Bootstrap,
+                along with backend development using Node.js, Express, and
+                MySQL. Right now, I'm learning React.js and Vue.js to enhance my
+                frontend skills.
+              </p>
+              <p class="fs-4">
+                In my free time, I enjoy playing video games like Genshin
+                Impact, Honkai: Star Rail, and various games on Steam. I also
+                love watching anime.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Section -->
+      <div id="skills" class="bg-dark custom-con text-white py-5">
+        <h1 class="text-center mb-4">Skills</h1>
+        <div class="divider mx-auto"></div>
+        <div
+          class="chip-container d-flex flex-wrap justify-content-center gap-2 mt-4 mb-5"
+        >
+          <span class="chip bg-primary text-white px-3 py-2 rounded-pill"
+            ><i class="fa-brands fa-python"></i> Python</span
+          >
+          <span class="chip bg-success text-white px-3 py-2 rounded-pill"
+            >C</span
+          >
+          <span class="chip bg-info text-white px-3 py-2 rounded-pill"
+            ><i class="fa-brands fa-git-alt"></i> Git</span
+          >
+          <span class="chip bg-danger text-white px-3 py-2 rounded-pill"
+            >SQL</span
+          >
+          <span class="chip bg-light text-dark px-3 py-2 rounded-pill"
+            >Figma</span
+          >
+        </div>
+        <div class="skills-wrapper">
+          <div class="container">
+            <!-- Skill 1: Web Development -->
+            <p>💻 Web Development (HTML, CSS, JavaScript, Bootstrap)</p>
+            <div
+              class="progress mb-3"
+              role="progressbar"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div
+                class="progress-bar progress-animate bg-primary"
+                style="width: 70%"
+              ></div>
+            </div>
+
+            <!-- Skill 2: Backend -->
+            <p>⚙️ Backend (Node.js, Express, MySQL)</p>
+            <div
+              class="progress mb-3"
+              role="progressbar"
+              aria-valuenow="20"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div
+                class="progress-bar progress-animate bg-success"
+                style="width: 20%"
+              ></div>
+            </div>
+
+            <!-- Skill 3: Frontend -->
+            <p>🖥️ Frontend (React.js, Vue.js)</p>
+            <div
+              class="progress mb-3"
+              role="progressbar"
+              aria-valuenow="65"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div
+                class="progress-bar progress-animate bg-info"
+                style="width: 65%"
+              ></div>
+            </div>
+          </div>
+          <div class="container">
+            <!-- Skill 4: Game Development -->
+            <p>🎮 Game Development (Unity, C#)</p>
+            <div
+              class="progress mb-3"
+              role="progressbar"
+              aria-valuenow="10"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div
+                class="progress-bar progress-animate bg-warning"
+                style="width: 10%"
+              ></div>
+            </div>
+
+            <!-- Skill 5: UI/UX Design -->
+            <p>🖼️ UI/UX Design (Figma, Adobe XD)</p>
+            <div
+              class="progress mb-3"
+              role="progressbar"
+              aria-valuenow="60"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div
+                class="progress-bar progress-animate bg-danger"
+                style="width: 60%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div id="contact" class="contact-section bg-light text-dark">
+        <div class="container">
+          <h1 class="section-title">Contact Me</h1>
+          <div class="divider"></div>
+          <div class="social-icons">
+            <!-- Email -->
+            <a
+              href="https://mail.google.com/mail/u/0/#inbox"
+              class="social-icon"
+              target="_blank"
+            >
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+            </a>
+            <!-- GitHub -->
+            <a
+              href="https://github.com/prompipatja/"
+              class="social-icon"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/"
+              class="social-icon"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <!-- Facebook -->
+            <a
+              href="https://www.facebook.com/"
+              class="social-icon"
+              target="_blank"
+            >
+              <i class="fab fa-facebook-f"></i>
+              <span>Facebook</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
