@@ -42,7 +42,7 @@ li:hover {
 }
 
 #home {
-    background: url("https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/01/genshin-impact-hu-tao-new-skin.jpg");
+    background: url("../assets/yo_img.jpg");
     color: white;
     display: flex;
     flex-direction: column;
