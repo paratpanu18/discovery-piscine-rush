@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Prompipat Thongtub</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 16.66%;
+        background-color: #007bff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+      }
+
+      li:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .content {
+        margin-left: 16.66%;
+        width: 83.34%;
+      }
+
+      #home {
+        background: url("https://wallpapers.com/images/hd/random-background-1920-x-1080-7ov6o26vgly7kmgp.jpg")
+          no-repeat center center/cover;
+        color: white;
+      }
+
+      #about {
+        background: url("https://source.unsplash.com/1600x900/?technology,code")
+          no-repeat center center/cover;
+        color: white;
+        padding: 20px;
+      }
+
+      .topic {
+        
+      }
+
+      .custom-con {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 20px;
+        position: relative;
+      }
+
+      .contact-page {
+        height: 100vh;
+        padding: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .con-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .contact-box {
+        background-color: rgb(159, 216, 255);
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+      }
+
+      .contact-box:hover {
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .profile-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .profile-img-about {
+        width: 100%;
+        height: 100%;
+      }
+
+      .skills-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .skills-list li {
+        font-size: 1.2rem;
+        margin: 5px 0;
+      }
+
+      @media (max-width: 767px) {
+        .sidebar {
+          width: 100%;
+          height: 10vh;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+
+        .content {
+          margin-left: 0;
+          width: 100%;
+        }
+
+        .profile-img {
+          width: 80px;
+          height: 80px;
+        }
+
+        .profile-img-about {
+          width: 100%;
+          height: 100%;
+        }
+
+        .nav-e {
+          display: none;
+        }
+
+        .con-contact {
+            flex-direction: column;
+        }
+
+        .topic {
+            position: absolute;
+            top: 0;
+        }
+
+        .ulist-info li {
+            font-size: small;
+        }
+
+        .contact-box {
+            width: 100%;
+            height: 100%;
+        }
+
+        .contact-box a img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .pf-topic {
+            font-size: 1.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar text-white">
+        <a href="index.html">
+            <img
+              class="profile-img"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqMFVc0af6Vxc8UKBootbFQJPfPF-mKyM0hg&s"
+              alt="Profile"
+            />
+
+        </a>
+      <h4 style="margin-top: 10px;">Prompipat Thongtub</h4>
+      <ul class="nav flex-column mt-3">
+        <li class="nav-item">
+          <a class="nav-link fs-4 text-white nav-e" href="index.html">Go back</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-4 text-white active nav-e" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-4 text-white active nav-e" href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-4 text-white nav-e" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-4 text-white nav-e" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <!-- Home Section -->
+      <div id="home" class="custom-con">
+        <h1>Prompipat Thongtub (Yo)</h1>
+        <h2>@pthongtu</h2>
+        <p>Welcome to my portfolio! Scroll down to learn more about me.</p>
+      </div>
+
+      <!-- About Me Section -->
+      <div id="about" class="custom-con">
+        <h1 style="margin-bottom: 15px;" class="text-black">About me</h1>
+        <div style="border: 2px solid black; margin-bottom: 80px; width: 85%;"></div>
+        <div class="container">
+          <div class="row">
+            <!-- Profile Image (Left) -->
+            <div class="col-md-4 text-center">
+              <img
+                class="profile-img-about"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqMFVc0af6Vxc8UKBootbFQJPfPF-mKyM0hg&s"
+                alt="Profile"
+              />
+            </div>
+
+            <!-- Personal Information (Right) -->
+            <div class="col-md-8 text-black">
+              <h1 class="mb-4 mt-3 pf-topic">Prompipat Thongtub (Yo)</h1>
+              <ul class="list-unstyled d-flex justify-content-center ulist-info">
+                <div
+                  class="d-flex flex-column justify-content-start align-items-start fs-5"
+                >
+                  <li><strong>🎂 Birthday:</strong> January 1, 2000</li>
+                  <li><strong>📅 Age:</strong> 24</li>
+                  <li><strong>📞 Phone:</strong> +66 1234 5678</li>
+                  <li>
+                    <strong>📧 Email:</strong>
+                    <a href="mailto:pthongtu@example.com" class="text-black"
+                      >pthongtu@example.com</a
+                    >
+                  </li>
+                </div>
+                <div
+                  class="d-flex flex-column justify-content-start align-items-start fs-5"
+                >
+                  <li>
+                    <strong>🏫 University:</strong> Chulalongkorn University
+                  </li>
+                  <li><strong>🎓 Major:</strong> Computer Science</li>
+                  <li><strong>📍 Location:</strong> Bangkok, Thailand</li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Section -->
+      <div id="skills" class="bg-dark custom-con text-white">
+        <h1 style="margin-bottom: 15px">Skills</h1>
+        <div
+          style="
+            border: 2px solid rgb(255, 255, 255);
+            width: 85%;
+            margin-bottom: 80px;
+          "
+        ></div>
+        <div class="container">
+          <!-- Skill 1: Web Development -->
+          <p class="fs-4">
+            💻 Web Development (HTML, CSS, JavaScript, Bootstrap)
+          </p>
+          <div
+            class="progress mb-3"
+            role="progressbar"
+            aria-label="Web Development"
+            aria-valuenow="90"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-primary" style="width: 90%"></div>
+          </div>
+
+          <!-- Skill 2: Backend -->
+          <p class="fs-4">⚙️ Backend (Node.js, Express, MySQL)</p>
+          <div
+            class="progress mb-3"
+            role="progressbar"
+            aria-label="Backend"
+            aria-valuenow="80"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-primary" style="width: 80%"></div>
+          </div>
+
+          <!-- Skill 3: Frontend -->
+          <p class="fs-4">🖥️ Frontend (React.js, Vue.js)</p>
+          <div
+            class="progress mb-3"
+            role="progressbar"
+            aria-label="Frontend"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-primary" style="width: 75%"></div>
+          </div>
+
+          <!-- Skill 4: Game Development -->
+          <p class="fs-4">🎮 Game Development (Unity, C#)</p>
+          <div
+            class="progress mb-3"
+            role="progressbar"
+            aria-label="Game Development"
+            aria-valuenow="70"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-primary" style="width: 70%"></div>
+          </div>
+
+          <!-- Skill 5: UI/UX Design -->
+          <p class="fs-4">🖼️ UI/UX Design (Figma, Adobe XD)</p>
+          <div
+            class="progress mb-3"
+            role="progressbar"
+            aria-label="UI/UX Design"
+            aria-valuenow="60"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-primary" style="width: 60%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div id="contact" class="bg-light contact-page text-dark">
+        <h1 style="margin-bottom: 15px">Contact</h1>
+        <div style="border: 2px solid black; width: 85%; margin-bottom: 30px;"></div>
+
+        <div class="con-contact">
+            <div class="contact-box">
+                <a href="https://mail.google.com/mail/u/0/">
+                    <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" style="width: 150px; height: 150px;" alt="">
+                </a>
+                <p class="fs-5">
+                    Email:
+                    <a
+                      class="text-dark"
+                      href="https://mail.google.com/mail/u/0/"
+                      target="_blank"
+                      >prompipat thongtub</a
+                    >
+                </p>
+            </div>
+    
+            <div class="contact-box">
+                <a href="https://www.facebook.com/">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" style="width: 150px; height: 150px;" alt="">
+                </a>
+              <p class="fs-5">
+                Facebook:
+                <a
+                  class="text-dark"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  >prompipat thongtub</a
+                >
+              </p>
+            </div>
+    
+            <div class="contact-box">
+                <a href="https://www.facebook.com/">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" style="width: 150px; height: 150px;" alt="">
+                </a>
+              <p class="fs-5">
+                 Instagram:
+                <a
+                  class="text-dark"
+                  href="https://twitter.com/pthongtu"
+                  target="_blank"
+                  >pthongtu</a
+                >
+              </p>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
